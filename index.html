@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+    <html lang="fr">
+
+<head>
+    <title> Restaurant coréen Bibim House | Accueil </title>
+    <meta name="description" content="Restaurant coréen paris 15 spécialisé dans le bibimbap" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="tinyimage/faviconlogorondbibimbap.png" type="image/x-icon">
+    <link rel="icon" href="tinyimage/faviconlogorondbibimbap.png" type="image/x-icon">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+   
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Anton|Nothing+You+Could+Do" rel="stylesheet">
+   <!-- googlebutton -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- opengraph -->
+<meta property="og:url"                content="https://www.bibimhouse.fr/" />
+<meta property="og:type"               content="restaurant.menu" />
+<meta property="og:title"              content="Bibim House" />
+<meta property="og:description"        content="Restaurant coréen paris 15 spécialisé dans le bibimbap" />
+<meta property="og:image"              content="https://www.bibimhouse.fr/tinyimage/Photopartage.png" />
+
+</head>
+
+<body>
+<section class="foo">
+            
+        <!-- Menu desktop -->
+
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+
+            <nav class="uk-navbar-container uk-visible@l">
+
+                <div class="uk-container uk-container-expand">
+                    <div uk-navbar>
+                        <div class="uk-navbar-left">
+                            <a href="#" uk-scroll class="uk-navbar-item uk-logo"><img class="logo" src="tinyimage/logo_bibimrectangle.jpg" alt="logoBibimHouse" width="40" height="40"/></a> 
+                        </div>
+                        <div class="uk-navbar-right">
+
+                            <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true;offset: 100">
+
+                                <li class="uk-active"><a uk-scroll href="#">Accueil</a></li>
+                                <li><a href="#about">A propos</a></li>
+                                <li><a href="#menucoreen">Menu</a></li>
+                                <li><a href="#">Livraison</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav livraisonlien4">
+                                            <li><a class="livraisonlien1" href="https://www.ubereats.com/fr-FR/paris/food-delivery/bibim-house/OVQWdFn_QP6Fs05M58p9vQ/" target="_blank">ubereats.com</a></li>
+                                            <li><a class="livraisonlien2" href="https://deliveroo.fr/fr/menu/paris/2eme-bourse/bibim-house?utm_medium=affiliate&utm_source=google_maps_link" target="_blank">deliveroo.fr</a></li>
+                                            <li><a class="livraisonlien3" href="https://www.resto-in.fr/livraison-a-domicile-paris/coreen/bibim-house" target="_blank">resto-in.fr</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#contact">Contact</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+
+
+
+        <!-- Menu mobile -->
+        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-hidden@m" id="menu" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" href="#" uk-toggle="target: #menu-mobile">
+                    <span uk-navbar-toggle-icon></span> 
+                </a>
+            </div>
+            
+        </nav>
+        <div class="uk-offcanvas-content">
+            <div id="menu-mobile" uk-offcanvas="mode: push; overlay: true">
+                <div class="uk-offcanvas-bar">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <img src="tinyimage/FormuleA_menumobile.jpg" alt="bibimbap_bibimhouse">
+                    <h5 class="uk-text-center"><span class="titlemobileside">Bibim House</span></h5>
+                  
+                    <div class="uk-text-center">
+                        <a href="https://www.instagram.com/bibimhouseparis/" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                        <a href="https://fr-fr.facebook.com/bibimhouseparis/" target="_blank" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="tel:+33142337948" class="uk-icon-button uk-margin-small-right" uk-icon="receiver"></a>
+
+                    </div>
+
+                    <hr>
+                    <ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true;">
+                        <li><a href="#about"> <span class="uk-margin-small-right" uk-icon="user"></span><b>A PROPOS</b></a></li>
+                        <li><a href="#menucoreen"> <span class="uk-margin-small-right" uk-icon="list"></span><b>MENU</b></a></li>
+                        <li>
+                            <a href="#"> <span class="uk-margin-small-right" uk-icon="forward"></span>LIVRAISON<span class="uk-margin-small-left" uk-icon="icon: triangle-down"></span></a>
+                            <div uk-dropdown="mode: click">
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li class="uk-active"><a href="https://www.ubereats.com/fr-FR/paris/food-delivery/bibim-house/OVQWdFn_QP6Fs05M58p9vQ/" target="_blank">ubereats.com</a></li>
+                                    <li><a href="https://deliveroo.fr/fr/menu/paris/2eme-bourse/bibim-house?utm_medium=affiliate&utm_source=google_maps_link" target="_blank">deliveroo.fr</a></li>
+                                    <li><a href="https://www.resto-in.fr/livraison-a-domicile-paris/coreen/bibim-house" target="_blank">resto-in.fr</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-position-bottom"><a href="#contact"> <span class="uk-margin-small-right" uk-icon="location" uk-scroll></span><b>1 Rue Cherubini 75002 Paris</b></a></li>
+
+                    </ul>
+               
+                </div>
+            </div>
+        </div>
+        <div class="titlenametest uk-position-center">
+
+        <h3 class="uk-text-center"><span class="bienvenue1">Bienvenue chez</span></h3>
+
+        <img class="uk-align-center" src="tinyimage/logoblancbibimhouse.png" alt=written_bibimhouse>
+        <p class="uk-text-center"><span class="adressetitre1" uk-parallax="opacity: 0,1; viewport: 0.5;"><b>Restaurant coréen</b></span></p>
+               <p class="uk-text-center"><span class="adressetitre1" uk-parallax="opacity: 0,1; viewport: 0.5;"><b>1 Rue Cherubini 75002 Paris France</b></span></p>
+
+    </div>
+
+        
+        <!-- Fin menu -->
+    </section>
+
+    <!-- A propos -->   
+    
+    <div class="uk-background-muted">
+        <section class="about" id="about">
+    <div class="uk-container">
+        <div class="uk-flex uk-flex-center">
+
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">Le Bibimbap</h3>
+                    <p>Venez découvrir les saveurs de la Corée en dégustant ce plat traditionnel. Nous sommes <b>ouvert 7j/7 de 12H à 22H30.</b>  
+                    </p>  
+                </div>
+                <div class="uk-card-media-bottom">
+                    <img src="tinyimage/bibimhousedehorscrop.jpg" alt="Restaurant Bibim house devanture" width="600" height="400">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- fin a propos -->
+    <!-- menu: formule -->
+    <section class="menuformule" id="menucoreen">
+        <div class="titreformule">
+            <div class="uk-h2 uk-text-center">FORMULES</div>
+        </div>
+        <div class="uk-container">
+
+
+            <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-inline; delay: 200; repeat: true">
+                <div>
+                    <a class="uk-inline" href="tinyimage/FormuleA - Slide.jpg" data-caption="A - BIBIMBAP + RAVIOLIS BEIGNETS + SOUPE 19€">
+                        <img src="tinyimage/FormuleA - newcrop.jpg" alt="Restaurant Bibim House - Formule A  BIBIMBAP + RAVIOLIS + SOUPE MISO" width="400" height="200">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h4>A - BIBIMBAP + RAVIOLIS + SOUPE MISO</h4>
+                            <hr>
+                            <p><i>Bibimbap, œuf et sauce au choix</i></p>
+                            <h4>19€</h4>
+
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="tinyimage/FormuleB - Slide.jpg" data-caption="B - BIBIMBAP + RAVIOLIS BEIGNETS AU POULET 16€">
+                        <img src="tinyimage/FormuleB- newcrop.jpg" alt="Restaurant Bibim House - Formule B  BIBIMBAP + RAVIOLIS">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h4>B - BIBIMBAP <br>+ RAVIOLIS</h4>
+                            <hr>
+                            <p><i>Bibimbap, œuf et sauce au choix</i></p>
+                            <h4>16€</h4>
+
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a class="uk-inline" href="tinyimage/FormuleC - Slide.jpg" data-caption="C - BIBIMBAP + SOUPE 16€">
+                        <img src="tinyimage/Formule C- newcrop.jpg" alt="Restaurant Bibim House - Formule C  BIBIMBAP + SOUPE MISO" width="400" height="100">
+                        <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                            <h4>C - BIBIMBAP <br>+ SOUPE MISO</h4>
+                            <hr>
+                            <p><i>Bibimbap, œuf et sauce au choix</i></p>
+                            <h4>16€</h4>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin formule  -->
+
+    <!-- TELECHARGER MENU -->
+    <p class="uk-text-center uk-margin">
+        <br>
+        <br>
+        <a class="uk-button uk-button-default" href="https://drive.google.com/file/d/13S86TElwiJPPjUGDJd9IRwtoRiI_M61h/view?usp=sharing" target="_blank" >Menu complet</a>
+        <br>
+        <br>
+    </p>
+    
+<!-- FIN SECTION TELECHARGE MENU -->
+  
+<section class="bibimbap" id="bibimbap">
+    <div class="uk-background-muted">
+
+        <!-- titre -->
+        <div class="titrebibimbap">
+            <div class="uk-h2 uk-text-center">A LA CARTE</div>
+        </div>
+        <!-- fin titre -->
+        <div class="uk-container">
+
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-4@s uk-margin" uk-grid>
+                <!-- 1re bibimbap   -->
+                <div class="uk-card-media-left uk-cover-container">
+
+                    <img src="tinyimage/Gunmandu_Bibim_GP.jpg" alt="Restaurant Bibim House - Gunmandu_Bibim_" uk-cover>
+                    <canvas width="300" height="300"></canvas>
+
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">S7. GUNMANDU (GYOZA) 5€</h3>
+                        <hr>
+                        <p>Raviolis beignets au poulet (5 Pcs).
+                        </p>
+                    </div>
+                </div>
+                <!-- fin 1re bibimbap -->
+                <!-- début deuxième bibimbap -->
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="tinyimage/Yachaemandu_Bibim_GP.jpg" alt="Restaurant Bibim House - Yachaemandu_Bibim" uk-cover>
+                    <canvas width="300" height="300"></canvas>
+                </div>
+                <!-- texte -->
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">S8. YACHAEMANDU (GYOZA) 5€</h3>
+                    <hr>
+                    <p>Raviolis beignets aux légumes (5 Pcs)</p>
+                </div>
+            </div>
+            <!-- fin deuxième bibimbap -->
+            <!-- 3eme bibimbap   -->
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-4@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="tinyimage/Kimuchi_Bibim_GP.jpg" alt="Restaurant Bibim House - Kimuchi_Bibim" uk-cover>
+                    <canvas width="300" height="300"></canvas>
+
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">S9. KIMUCHI 5€</h3>
+                        <hr>
+                        <p>Choux pimenté</p>
+                    </div>
+                </div>
+                <!-- fin 3eme bibimbap -->
+                <!-- début 4eme bibimbap -->
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="tinyimage/Banchan_Bibim_GP.jpg" alt="Restaurant Bibim House - Banchan_Bibim_" uk-cover>
+                    <canvas width="300" height="300"></canvas>
+                </div>
+                <!-- texte -->
+                <div class="uk-card-body">
+                    <h3 class="uk-card-title">S10. BANCHAN 6€</h3>
+                    <hr>
+                    <p>4 petits assortiments de légumes</p>
+                </div>
+            </div>
+
+            <!-- fin 4eme bibimbap -->
+            <!-- 5eme bibimbap   -->
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-4@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="tinyimage/SoupeMiso_Bibim_GP.jpg" alt="Restaurant Bibim House - SoupeMiso_Bibim_" uk-cover>
+                    <canvas width="300" height="300"></canvas>
+
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">S11. MISO-GU 5€</h3>
+                        <hr>
+                        <p>Soupe Miso Coréenne</p>
+                    </div>
+                </div>
+                <!-- fin 5eme bibimbap -->
+              
+        </div>
+    </div>
+</section>
+
+<!-- fin bibimbap -->
+
+
+
+    <!-- bibimbap -->
+
+    <section class="bibimbap" id="bibimbap">
+        <div class="uk-background-muted">
+
+            <!-- titre -->
+            <div class="titrebibimbap">
+                <div class="uk-h2 uk-text-center">BIBIMBAP</div>
+            </div>
+            <!-- fin titre -->
+            <div class="uk-container">
+
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-4@s uk-margin" uk-grid>
+                    <!-- 1re bibimbap   -->
+                    <div class="uk-card-media-left uk-cover-container">
+
+                        <img src="tinyimage/T1. Yachae bibimbap.jpg" alt="Restaurant Bibim House - Yachae bibimbap" uk-cover>
+                        <canvas width="300" height="300"></canvas>
+
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">T1. Yachae bibimbap(végétarien) 13€</h3>
+                            <hr>
+                            <p>Bibimbap végétarien. Épinards, carottes, courgettes, champignons, soja, radis, oeuf,
+                                l'huile de sésame.</p>
+                        </div>
+                    </div>
+                    <!-- fin 1re bibimbap -->
+                    <!-- début deuxième bibimbap -->
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="tinyimage/T2 Sogogi Bibimbap-newcrop.jpg" alt="Restaurant Bibim House - Sogogi Bibimbap" uk-cover>
+                        <canvas width="300" height="300"></canvas>
+                    </div>
+                    <!-- texte -->
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">T2 Sogogi Bibimbap 13€</h3>
+                        <hr>
+                        <p>Bibimbap au boeuf. Épinards, carottes, courgettes, champignons, soja, radis, oeuf, l'huile
+                            de sésame.</p>
+                    </div>
+                </div>
+                <!-- fin deuxième bibimbap -->
+                <!-- 3eme bibimbap   -->
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-4@s uk-margin" uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="tinyimage/T3 Doeuji Bibimbap.jpg" alt="Restaurant Bibim House - Doeuji Bibimbap" uk-cover>
+                        <canvas width="300" height="300"></canvas>
+
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">T3 Doeuji Bibimbap 13€</h3>
+                            <hr>
+                            <p>Bibimbap au porc. Épinards, carottes, courgettes, champignons, soja, radis, oeuf, de
+                                l'huile de sésame</p>
+                        </div>
+                    </div>
+                    <!-- fin 3eme bibimbap -->
+                    <!-- début 4eme bibimbap -->
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="tinyimage/T4 Dak Bibimbap.jpg" alt="Restaurant Bibim House - Dak Bibimbap" uk-cover>
+                        <canvas width="300" height="300"></canvas>
+                    </div>
+                    <!-- texte -->
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">T4 Dak Bibimbap 13€</h3>
+                        <hr>
+                        <p>Bibimbap au poulet. Épinards, carottes, courgettes, champignons, soja, radis, oeuf, de
+                            l'huile de sésame</p>
+                    </div>
+                </div>
+
+                <!-- fin 4eme bibimbap -->
+                <!-- 5eme bibimbap   -->
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-4@s uk-margin" uk-grid>
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="tinyimage/T5 Ojingeo Pokun Bibimbap.jpg" alt="Restaurant Bibim House - Ojingeo Pokun Bibimbap" uk-cover>
+                        <canvas width="300" height="300"></canvas>
+
+                    </div>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">T5 Ojingeo Pokun Bibimbap 13€</h3>
+                            <hr>
+                            <p>Bibimbap aux calamars. Épinards, carottes, courgettes, champignons, soja, radis, oeuf,
+                                de l'huile de sésame</p>
+                        </div>
+                    </div>
+                    <!-- fin 5eme bibimbap -->
+                    <!-- début 6eme bibimbap -->
+                    <div class="uk-card-media-left uk-cover-container">
+                        <img src="tinyimage/T6 Sehou Bibimbap.jpg" alt="Restaurant Bibim House - Sehou Bibimbap" uk-cover>
+                        <canvas width="300" height="300"></canvas>
+                    </div>
+                    <!-- texte -->
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">T6 Sehou Bibimbap 13€</h3>
+                        <hr>
+                        <p>Bibimbap aux crevettes. Épinards, carottes, courgettes, champignons, soja, radis, oeuf, de
+                            l'huile de sésame</p>
+                    </div>
+                </div>
+                <!-- fin 6eme bibimbap -->
+            </div>
+        </div>
+    </section>
+
+    <!-- fin bibimbap -->
+
+    <!-- debut image parralax -->
+    <div class="uk-container uk-container-small">
+            
+         <div class="uk-height-medium uk-flex-middle uk-background-cover uk-light" data-src="tinyimage/uber-eatsopacity.jpg" alt="Restaurant Bibim House livraison" uk-img>
+         <br>
+            <h3 class="uk-flex uk-flex-center" >Faites-vous livrer chez vous</h3>
+            <br>
+        
+        <!-- lien commande -->
+        <div class="uk-inline uk-flex uk-flex-center">
+                <button class="uk-button uk-button-default" type="button">Commande</button>
+                <div uk-dropdown="pos: bottom-justify">
+                    <ul class="uk-nav uk-dropdown-nav">
+                            <li><a class="livraisonlien1" href="https://www.ubereats.com/fr-FR/paris/food-delivery/bibim-house/OVQWdFn_QP6Fs05M58p9vQ/" target="_blank">ubereats.com</a></li>
+                            <li><a class="livraisonlien2" href="https://deliveroo.fr/fr/menu/paris/2eme-bourse/bibim-house?utm_medium=affiliate&utm_source=google_maps_link" target="_blank">deliveroo.fr</a></li>
+                            <li><a class="livraisonlien3" href="https://www.resto-in.fr/livraison-a-domicile-paris/coreen/bibim-house" target="_blank">resto-in.fr</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        
+        </div>
+    </div>
+
+
+    <!-- fin image parralax -->
+
+    <!-- debut contact -->
+
+    <section class="contact" id="contact">
+
+        <!-- titre -->
+        <div class="titrecontact">
+            <div class="uk-h2 uk-text-center">ACCÈS</div>
+        </div>
+        <!-- fin titre -->
+   <!-- test -->
+   <section>
+   <div class="uk-container">
+    <div class="uk-child-width-1-1">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10498.017090147796!2d2.3366845!3d48.8676627!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0de31086f3554de!2z55-z6ZSF5Z2KIGJpYmltIGhvdXNlIOu5hOu5lCDsp5E!5e0!3m2!1sfr!2sfr!4v1543161753173"
+            width="600" height="540" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <div>
+                <div>
+                    </section>
+    <!-- fin section contact -->
+    <div class="uk-container uk-container-large">
+
+    <div class="uk-flex uk-flex-right">
+
+    <a href="#" uk-scroll>
+    <span style="font-size: 3em; color: #383A3D">
+        <i class="fas fa-chevron-circle-up"></i></span>
+    </a>
+</div>
+</div>
+    <!-- debut footer -->
+    <footer>
+        
+        <div class="footersocial">
+        <br>
+        <div class="titrefooter">           
+            <p class="uk-text-center">Contact</p>
+            </div>
+
+           <p class="uk-text-center"><b>1 Rue Cherubini 75002 Paris</b></a></p>
+           <p class="uk-text-center"><b>Ouvert 7j/7 de 12H à 22H30</b></a></p>  
+           <p class="uk-text-center"><b>01 42 33 79 48</b></a></p> 
+            
+        <div class="titrefooter">           
+                 <p class="uk-text-center">Suivez-nous</p>
+                </div>
+
+                <div class="uk-text-center">
+                        <a href="https://www.instagram.com/bibimhouseparis/" target="_blank" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                        <a href="https://fr-fr.facebook.com/bibimhouseparis/" target="_blank" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                    </div>
+                    <br>
+                </div>
+<div class="fintitrefooter">
+      <p class="uk-text-center"> Made by <a href="https://github.com/matmat92" target="_blank" class="uk-link-text">
+        Mathieu T </a></p>  
+</div>
+
+ </footer>
+  
+
+    </div>
+</body>
+
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+
+</html>
