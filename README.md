@@ -4,7 +4,9 @@ A website made for a tasteful Korean restaurant localized in the center of Paris
 
 ## Screenshots
 
-Include logo/demo screenshot etc.
+What you actually see on an iPhone 6, 7, 8
+
+![alt text](https://github.com/promathieuthiry/bibim-house/blob/master/screenShoot/captureBibimHouse.gif)
 
 ## Tech/framework used
 
